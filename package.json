@@ -1,7 +1,8 @@
 {
   "scripts": {
-    "test": "jest --verbose --coverage",
-    "start": "node index.js"
+    "test": "NODE_ENV=test jest --verbose --coverage",
+    "start": "NODE_ENV=production node index.js",
+    "dev": "NODE_ENV=dev node index.js"
   },
   "dependencies": {
     "chalk": "^4.1.1",
